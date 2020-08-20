@@ -143,6 +143,7 @@ body {
     margin: 5px;
     position: relative;
     background: #fff;
+    text-align: left;
 }
 .product-schance:hover{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
@@ -199,7 +200,7 @@ body {
     font-weight: 700;
         color: #222;
 }
-.product-schance .number-cart .btn_decrement, .product-schance .number-cart .btn_increment{
+.order-number .btn_decrement, .order-number .btn_increment{
     background-color: transparent;
     border: 1px solid #dadada;
     width: 35px;
@@ -208,7 +209,7 @@ body {
     cursor: pointer;
     transition: .3s;
 }
-.product-schance .number-cart #addtocart_quantity{
+.order-number #addtocart_quantity{
     color: #333;
     border: 1px solid #dadada;
     width: 35px;
@@ -231,7 +232,44 @@ body {
     line-height: 35px;
     font-size: 13px;
 }
-.product-schance .number-cart input { 
+.select-number{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.buy-to-cart ._343Jzb {
+    margin-right: 10px;
+    color: #fff;
+    stroke: #fff;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    position: relative;
+    top: 3px;
+}
+.add-to-cart .buy-to-cart{
+    background: #ff424e;
+    display: inline-block;
+    padding: 4px 30px 8px;
+    margin-top: 25px;
+    color: #fff;
+}
+.content-des-product {
+    line-height: 35px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.select-number .order-number{
+    margin: 0 15px;
+}
+.title-des-product{
+    background: #fafafa;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 600;
+}
+.order-number input { 
     outline: none;
 }
 .navbar-brand {
@@ -1494,7 +1532,9 @@ label.checkme {
     font-weight: bold;
     text-transform: uppercase;
 }
-
+.des-sort{
+    text-align: justify;
+}
 .mega-dropdown-menu form {
     margin: 3px 20px;
 }
@@ -2201,6 +2241,12 @@ input#amount {
     margin: 0px 10px;
     background: #f4f4f4
 }
+.relate-detail{
+    padding: 0 10px
+}
+#product-relate .swiper-slide{
+    background: #f4f4f4
+}
 .company-item{
     background: #fff;
     padding: 10px;
@@ -2594,7 +2640,12 @@ blockquote {
     position: absolute;
     right: 0;
 }
-
+.product-name{
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
 .Specials .product-name a {
     font-size: 18px;
     font-weight: 600;
@@ -2620,14 +2671,50 @@ blockquote {
     display: none;
 }
 
-.price {
-    color: #000;
+.price .price-cost {
+    color: #ff424e;
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
-    font-family: "Open Sans";
+    margin: 15px 0
 }
-
+.price .price-discount{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.price .percent-product{
+    display: inline-block;
+    padding: 1px 8px;
+    background: #ff424e;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+.content-detail-product{
+    background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    margin-top: 20px;
+}
+.company-rate{
+    padding: 10px 0;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.company-rate .rate-line{
+    margin: 10px 0;
+}
+.company-rate .rate-line .content-rate{
+    font-size: 15px;
+    color: #222;
+    font-weight: 700;
+}
+.company-rate .rate-line a.content-rate:hover{
+    color: #ff424e;
+}
 .category-page-wrapper {
     border: 1px solid #e6e6e6;
     display: inline-block;
@@ -3216,6 +3303,13 @@ a.thumbnail.active {
 /*----------------------------------*/
 
 @media (max-width: 991px) {
+    .product-name{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .content-detail-product{
+        padding: 15px
+    }
     .navbar-header {
         float: left;
         width: 57%;
@@ -3435,6 +3529,28 @@ a.thumbnail.active {
     }
 }
 @media (max-width: 480px) {
+    .product-schance .number-cart{
+        justify-content: inherit;
+    }
+    .product-schance .number-cart .select-cart{
+        margin-left: 10px;
+    }
+    .title-des-product{
+        padding: 10px
+    }
+    .content-des-product{
+        line-height: 30px;
+    }
+    .select-number{
+        flex-wrap: wrap;
+    }
+    .select-number .products-available{
+        width: 100%;
+        margin-top: 11px;
+    }
+    .add-to-cart .buy-to-cart{
+        margin-top: 15px;
+    }
     .item.col-lg-3.col-md-4.col-sm-6.col-xs-12{
         width: 100% !important;
     }

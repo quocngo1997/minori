@@ -94,6 +94,25 @@
                   </ul>
                 </div>
               </div>
+              <div class="main-search pull-right">
+                <div class="search-overlay">
+                  <!-- Close Icon -->
+                  <a href="javascript:void(0)" class="search-overlay-close"></a>
+                  <!-- End Close Icon -->
+                  <div class="container">
+                    <!-- Search Form -->
+                    <form role="search" id="searchform" action="http://html.lionode.com/search" method="get">
+                      <label class="h5 normal search-input-label">Enter keywords To Search Entire Store</label>
+                      <input value="" name="q" placeholder="Search here..." type="search" />
+                      <button type="submit"></button>
+                    </form>
+                    <!-- End Search Form -->
+                  </div>
+                </div>
+                <div class="header-search">
+                  <a id="search-overlay-btn"></a>
+                </div>
+              </div>
             </div>
             <div class="collapse navbar-collapse js-navbar-collapse pull-right">
               <ul id="menu" class="nav navbar-nav">
@@ -104,6 +123,56 @@
             </div>
             <!-- /.nav-collapse -->
           </nav>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="category" onclick="showCompany()">
+                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive" data-toggle="collapse"
+                  aria-expanded="true" role="button">
+                  <h4 class="category_text">Doanh nghiệp</h4>
+                  <span class="i-bar"><i class="fa fa-bars"></i></span>
+                </div>
+                <div id="category-menu">
+                  <div class="nav-responsive">
+                    <ul class="nav main-navigation collapse in">
+                      <li><a href="#">SHE Chocolate</a></li>
+                      <li><a href="#">TRUNG PHONG FOODs</a></li>
+                      <li><a href="#">YẾN SÀO BẢO TRÂN</a></li>
+                      <li><a href="#">ANDI Leather</a></li>
+                      <li><a href="#">CLEAN N' GREEN</a></li>
+                      <li><a href="#">ZONE7 Mini Cinema n Fast-food</a></li>
+                      <li><a href="#">Công ty TNHH TM&DV Du Lịch PPS</a></li>
+                      <li><a href="#">Công ty TNHH SAGA</a></li>
+                      <li><a href="#">Công ty cổ phần dinh dưỡng CNC</a></li>
+                      <li><a href="#">Cây Xanh CMT Garden</a></li>
+                      <li><a href="#">MINORI</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-9">
+              <div class="header-bottom-right offers">
+                <div class="marquee">
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Cần lắm
+                    những ngôi trường ấm áp</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi sẽ
+                    nhận lại</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Nụ cười
+                    hồn nhiên giữa muôn bề thiếu thốn</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Những mảnh
+                    đời khó khăn</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Trẻ em
+                    vùng cao</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                    chúng ta sẽ được nhận lại</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -420,6 +489,15 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    function showCompany() {
+      const x = document.getElementById("category-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
     var swiper1 = new Swiper('#company-tab .swiper-container', {
       loop: true,
       navigation: {
@@ -432,10 +510,10 @@
       },
       breakpoints: {
         480: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         1024: {
-          slidesPerView: 6,
+          slidesPerView: 4,
         },
       },
     });
