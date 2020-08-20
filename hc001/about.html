@@ -1,594 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- =====  BASIC PAGE NEEDS  ===== -->
-    <meta charset="utf-8" />
-    <title>About us</title>
-    <!-- =====  SEO MATE  ===== -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="distribution" content="global" />
-    <meta name="revisit-after" content="2 Days" />
-    <meta name="robots" content="ALL" />
-    <meta name="rating" content="8 YEARS" />
-    <meta name="Language" content="en-us" />
-    <meta name="GOOGLEBOT" content="NOARCHIVE" />
-    <!-- =====  MOBILE SPECIFICATION  ===== -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <!-- =====  CSS  ===== -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon.png" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.html" />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="images/apple-touch-icon-72x72.html"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="images/apple-touch-icon-114x114.html"
-    />
-  </head>
 
-  <body>
-    <!-- =====  LODER  ===== -->
-    <div class="wrapper">
-      <!-- =====  HEADER START  ===== -->
-      <header id="header">
-        <div class="header-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <ul class="header-top-left">
-                  <li class="language dropdown">
-                    <span
-                      class="dropdown-toggle"
-                      id="dropdownMenu1"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      role="button"
-                    >
-                      <img src="images/English-icon.gif" alt="img" /> English
-                      <span class="caret"></span>
-                    </span>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li>
-                        <a href="#"
-                          ><img src="images/English-icon.gif" alt="img" />
-                          English
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img src="images/French-icon.gif" alt="img" /> French
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img src="images/German-icon.gif" alt="img" /> German
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="currency dropdown">
-                    <span
-                      class="dropdown-toggle"
-                      id="dropdownMenu12"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      role="button"
-                    >
-                      USD <span class="caret"></span>
-                    </span>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu12">
-                      <li><a href="#">USD</a></li>
-                      <li><a href="#">EUR</a></li>
-                      <li><a href="#">AUD</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-6">
-                <ul class="header-top-right text-right">
-                  <li class="account"><a href="login.html">My Account</a></li>
-                  <li class="sitemap"><a href="#">Sitemap</a></li>
-                  <li class="cart"><a href="cart_page.html">My Cart</a></li>
-                </ul>
-              </div>
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8" />
+  <title>Giới thiệu</title>
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width" />
+  <!-- =====  CSS  ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <!-- =====  LODER  ===== -->
+  <div class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+              <ul class="header-top-right text-right">
+                <li class="account"><a href="login.html">Tài khoản</a></li>
+                <li class="cart"><a href="cart_page.html">Giỏ hàng</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="header">
-          <div class="container">
-            <nav class="navbar">
-              <div class="navbar-header mtb_20">
-                <a class="navbar-brand" href="index.html">
-                  <img alt="HealthCared" src="images/logo.png" />
-                </a>
-              </div>
-              <div class="header-right pull-right mtb_50">
-                <button
-                  class="navbar-toggle pull-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target=".js-navbar-collapse"
-                >
-                  <span class="i-bar"><i class="fa fa-bars"></i></span>
-                </button>
-                <div class="shopping-icon">
-                  <div
-                    class="cart-item"
-                    data-target="#cart-dropdown"
-                    data-toggle="collapse"
-                    aria-expanded="true"
-                    role="button"
-                  >
-                    Item's : <span class="cart-qty">02</span>
-                  </div>
-                  <div id="cart-dropdown" class="cart-menu collapse">
-                    <ul>
-                      <li>
-                        <table class="table table-striped">
-                          <tbody>
-                            <tr>
-                              <td class="text-center">
-                                <a href="#"
-                                  ><img
-                                    src="images/product/70x84.jpg"
-                                    alt="iPod Classic"
-                                    title="iPod Classic"
-                                /></a>
-                              </td>
-                              <td class="text-left product-name">
-                                <a href="#">MacBook Pro</a>
-                                <span class="text-left price">$20.00</span>
-                                <input
-                                  class="cart-qty"
-                                  name="product_quantity"
-                                  min="1"
-                                  value="1"
-                                  type="number"
-                                />
-                              </td>
-                              <td class="text-center">
-                                <a class="close-cart"
-                                  ><i class="fa fa-times-circle"></i
-                                ></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-center">
-                                <a href="#"
-                                  ><img
-                                    src="images/product/70x84.jpg"
-                                    alt="iPod Classic"
-                                    title="iPod Classic"
-                                /></a>
-                              </td>
-                              <td class="text-left product-name">
-                                <a href="#">MacBook Pro</a>
-                                <span class="text-left price">$20.00</span>
-                                <input
-                                  class="cart-qty"
-                                  name="product_quantity"
-                                  min="1"
-                                  value="1"
-                                  type="number"
-                                />
-                              </td>
-                              <td class="text-center">
-                                <a class="close-cart"
-                                  ><i class="fa fa-times-circle"></i
-                                ></a>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li>
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <td class="text-right">
-                                <strong>Sub-Total</strong>
-                              </td>
-                              <td class="text-right">$2,100.00</td>
-                            </tr>
-                            <tr>
-                              <td class="text-right">
-                                <strong>Eco Tax (-2.00)</strong>
-                              </td>
-                              <td class="text-right">$2.00</td>
-                            </tr>
-                            <tr>
-                              <td class="text-right">
-                                <strong>VAT (20%)</strong>
-                              </td>
-                              <td class="text-right">$20.00</td>
-                            </tr>
-                            <tr>
-                              <td class="text-right"><strong>Total</strong></td>
-                              <td class="text-right">$2,122.00</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </li>
-                      <li>
-                        <form
-                          action="http://html.lionode.com/healthcare/hc001/cart_page.html"
-                        >
-                          <input
-                            class="btn pull-left mt_10"
-                            value="View cart"
-                            type="submit"
-                          />
-                        </form>
-                        <form
-                          action="http://html.lionode.com/healthcare/hc001/checkout_page.html"
-                        >
-                          <input
-                            class="btn pull-right mt_10"
-                            value="Checkout"
-                            type="submit"
-                          />
-                        </form>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="main-search pull-right">
-                  <div class="search-overlay">
-                    <!-- Close Icon -->
-                    <a
-                      href="javascript:void(0)"
-                      class="search-overlay-close"
-                    ></a>
-                    <!-- End Close Icon -->
-                    <div class="container">
-                      <!-- Search Form -->
-                      <form
-                        role="search"
-                        id="searchform"
-                        action="http://html.lionode.com/search"
-                        method="get"
-                      >
-                        <label class="h5 normal search-input-label"
-                          >Enter keywords To Search Entire Store</label
-                        >
-                        <input
-                          value=""
-                          name="q"
-                          placeholder="Search here..."
-                          type="search"
-                        />
-                        <button type="submit"></button>
-                      </form>
-                      <!-- End Search Form -->
-                    </div>
-                  </div>
-                  <div class="header-search">
-                    <a id="search-overlay-btn"></a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="collapse navbar-collapse js-navbar-collapse pull-right"
-              >
-                <ul id="menu" class="nav navbar-nav">
-                  <li><a href="index.html">Trang chủ</a></li>
-                  <li><a href="about.html">Giới thiệu</a></li>
-                  <li><a href="category_page.html">Sản phẩm</a></li>
-                </ul>
-              </div>
-              <!-- /.nav-collapse -->
-            </nav>
-          </div>
-        </div>
-        <div class="header-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4 col-md-4 col-lg-3">
-                <div class="category">
-                  <div
-                    class="menu-bar"
-                    data-target="#category-menu,#category-menu-responsive"
-                    data-toggle="collapse"
-                    aria-expanded="true"
-                    role="button"
-                  >
-                    <h4 class="category_text">Top category</h4>
-                    <span class="i-bar"><i class="fa fa-bars"></i></span>
-                  </div>
-                </div>
-                <div
-                  id="category-menu-responsive"
-                  class="navbar collapse"
-                  aria-expanded="true"
-                  role="button"
-                >
-                  <div class="nav-responsive">
-                    <ul class="nav main-navigation collapse in">
-                      <li><a href="#">Pharmacy</a></li>
-                      <li><a href="#">Health</a></li>
-                      <li><a href="#">Beauty</a></li>
-                      <li><a href="#">Vitamins</a></li>
-                      <li><a href="#">Sweating</a></li>
-                      <li><a href="#">Coughs & Colds</a></li>
-                      <li><a href="#">Hair Loss</a></li>
-                      <li><a href="#">Weight Loss</a></li>
-                      <li><a href="#">Antifungals</a></li>
-                      <li><a href="#">Pain Relief</a></li>
-                      <li><a href="#">Stop Smoking</a></li>
-                      <li><a href="#">Skin Conditions</a></li>
-                      <li><a href="#">Top Brands</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-8 col-md-8 col-lg-9">
-                <div class="header-bottom-right offers">
-                  <div class="marquee">
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>It's
-                      Sexual Health Week!</span
-                    >
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>Our 5 Tips
-                      for a Healthy Summer</span
-                    >
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>Sugar
-                      health at risk?</span
-                    >
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>The Olay
-                      Ranges - What do they do?</span
-                    >
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>Body fat -
-                      what is it and why do we need it?</span
-                    >
-                    <span
-                      ><i class="fa fa-circle" aria-hidden="true"></i>Can a
-                      pillow help you to lose weight?</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- =====  HEADER END  ===== -->
-      <!-- =====  CONTAINER START  ===== -->
-      <div class="container">
-        <div class="row">
-          <div id="column-left" class="col-sm-4 col-md-4 col-lg-3 hidden-xs">
-            <div
-              id="category-menu"
-              class="navbar collapse in mb_40"
-              aria-expanded="true"
-              role="button"
-            >
-              <div class="nav-responsive">
-                <ul class="nav main-navigation collapse in">
-                  <li><a href="#">SHE Chocolate</a></li>
-                  <li><a href="#">TRUNG PHONG FOODs</a></li>
-                  <li><a href="#">YẾN SÀO BẢO TRÂN</a></li>
-                  <li><a href="#">ANDI Leather</a></li>
-                  <li><a href="#">CLEAN N' GREEN</a></li>
-                  <li><a href="#">ZONE7 Mini Cinema n Fast-food</a></li>
-                  <li><a href="#">Raon Hotel</a></li>
-                  <li><a href="#">Công ty TNHH TM&DV Du Lịch PPS</a></li>
-                  <li><a href="#">Công ty TNHH SAGA</a></li>
-                  <li><a href="#">Công ty cổ phần dinh dưỡng CNC</a></li>
-                  <li><a href="#">Cây Xanh CMT Garden</a></li>
-                  <li><a href="#">MINORI</a></li>
-                  <li><a href="#">Shena Media</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="left_banner left-sidebar-widget mt_30 mb_40">
-              <a href="#"
-                ><img
-                  src="images/left1.jpg"
-                  alt="Left Banner"
-                  class="img-responsive"
-              /></a>
-            </div>
-          </div>
-          <div class="col-sm-8 col-md-8 col-lg-9 mtb_30">
-            <!-- about  -->
-            <div class="row">
-              <div class="col-md-12">
-                <figure>
-                  <img src="images/about-page-gaando.jpg" alt="#" />
-                </figure>
-              </div>
-              <div class="col-md-12">
-                <div class="about-text">
-                  <div class="about-heading-wrap">
-                    <h2 class="about-heading mb_20 mt_40 ptb_10">
-                      Về chúng tôi
-                    </h2>
-                  </div>
-                  <div>
-                    <p>
-                      Dựa vào khảo sát 60 nền kinh tế của Mạng lưới khởi nghiệp
-                      Toàn Cầu, Việt Nam nằm trong Top đầu 20 quốc gia về tinh
-                      thần khởi nghiệp.
-                    </p>
-                    <p>
-                      Tuy nhiên, cũng theo nghiên cứu này, khả năng hiện thực
-                      hóa ý tường của người Việt lại nằm trong 20 nền kinh tế
-                      đứng cuối.
-                    </p>
-                    <p>
-                      Việc khởi nghiệp hay bắt đầu một hoạt động kinh doanh rất
-                      đơn giản, chỉ cần xuất phát từ một ý tưởng. Nhưng để đưa
-                      được ý tưởng ấy trở thành một mô hình kinh doanh cụ thể và
-                      vận hành hiệu quả là một chặng đường dài.
-                    </p>
-                    <p>
-                      Tỷ lệ tồn tại sau 3 đến 5 năm của các doanh nghiệp khởi
-                      nghiệp chỉ là 5 đến 10%. Lý do xuất phát từ chính những
-                      vấn đề vướng mắc như: sản phẩm, tài chính, nhân sự, thương
-                      hiệu, văn hóa .....
-                    </p>
-                    <p>
-                      Xuất phát là người đã từng khởi nghiệp và cũng chuẩn bị
-                      khởi nghiệp, tôi hiểu những khó khăn, những cô đơn của
-                      người khởi nghiệp.... và đó là lý do tôi tham gia xây dựng
-                      Cộng đồng cùng những người khởi nghiệp.
-                    </p>
-                    <p>
-                      Website thương mại S-CHANCE được ra đời với mục đích gắn
-                      kết các sản phẩm/ dịch vụ mà thành viên cộng đồng đang
-                      kinh doanh.
-                    </p>
-                    <p>
-                      Ở S-CHANCE bạn vừa là nhà cung cấp, bạn vừa là khách hàng
-                      và hơn nữa bạn vừa tham gia đóng góp QUỸ S-CHANCE cho
-                      những hoạt động xã hội khác.
-                    </p>
-                    <p>Cùng nhau nhé các bạn!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- =====  product ===== -->
-            <!-- =====  end  ===== -->
-            <!--Team Carousel -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- Single Blog  -->
-    <!-- End Blog   -->
-    <!-- =====  CONTAINER END  ===== -->
-    <!-- =====  FOOTER START  ===== -->
-    <div class="footer pt_60">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 footer-block">
-            <div class="content_footercms_right">
-              <div class="footer-contact">
-                <div class="footer-logo mb_40">
-                  <a href="index.html">
-                    <img src="images/logo.png" alt="HealthCare" />
-                  </a>
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header mtb_20">
+              <a class="navbar-brand" href="index.html">
+                <img alt="HealthCared" src="images/logo.png" />
+              </a>
+            </div>
+            <div class="header-right pull-right">
+              <button class="navbar-toggle pull-left" type="button" data-toggle="collapse"
+                data-target=".js-navbar-collapse">
+                <span class="i-bar"><i class="fa fa-bars"></i></span>
+              </button>
+              <div class="shopping-icon">
+                <div class="cart-item" data-target="#cart-dropdown" data-toggle="collapse" aria-expanded="true"
+                  role="button">
+                  Item's : <span class="cart-qty">02</span>
                 </div>
-                <ul>
-                  <li>B-14 Collins Street West Victoria 2386</li>
-                  <li>(+123) 456 789 - (+024) 666 888</li>
-                  <li>Contact@yourcompany.com</li>
-                </ul>
-                <div class="social_icon">
+                <div id="cart-dropdown" class="cart-menu">
                   <ul>
                     <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <table class="table table-striped">
+                        <tbody>
+                          <tr>
+                            <td class="text-center">
+                              <a href="#"><img src="images/product/70x84.jpg" alt="iPod Classic"
+                                  title="iPod Classic" /></a>
+                            </td>
+                            <td class="text-left product-name">
+                              <a href="#">MacBook Pro</a>
+                              <span class="text-left price">$20.00</span>
+                              <input class="cart-qty" name="product_quantity" min="1" value="1" type="number" />
+                            </td>
+                            <td class="text-center">
+                              <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">
+                              <a href="#"><img src="images/product/70x84.jpg" alt="iPod Classic"
+                                  title="iPod Classic" /></a>
+                            </td>
+                            <td class="text-left product-name">
+                              <a href="#">MacBook Pro</a>
+                              <span class="text-left price">$20.00</span>
+                              <input class="cart-qty" name="product_quantity" min="1" value="1" type="number" />
+                            </td>
+                            <td class="text-center">
+                              <a class="close-cart"><i class="fa fa-times-circle"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-rss"></i></a>
+                      <form>
+                        <input class="btn pull-right mt_10" value="Xem giỏ hàng" type="submit" />
+                      </form>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-2 footer-block">
-            <h6 class="footer-title ptb_20">Categories</h6>
-            <ul>
-              <li><a href="#">Medicines</a></li>
-              <li><a href="#">Healthcare</a></li>
-              <li><a href="#">Mother & Baby</a></li>
-              <li><a href="#">Vitamins</a></li>
-              <li><a href="#">Toiletries</a></li>
-              <li><a href="#">Skincare</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2 footer-block">
-            <h6 class="footer-title ptb_20">Information</h6>
-            <ul>
-              <li><a href="contact.html">Specials</a></li>
-              <li><a href="#">New Products</a></li>
-              <li><a href="#">Best Sellers</a></li>
-              <li><a href="#">Our Stores</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2 footer-block">
-            <h6 class="footer-title ptb_20">My Account</h6>
-            <ul>
-              <li><a href="#">Checkout</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">My Orders</a></li>
-              <li><a href="#">My Credit Slips</a></li>
-              <li><a href="#">My Addresses</a></li>
-              <li><a href="#">My Personal Info</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6 class="ptb_20">SIGN UP OUR NEWSLETTER</h6>
-            <p class="mt_10 mb_20">
-              For get offers from our favorite brands & get 20% off for next
-            </p>
-            <div class="form-group">
-              <input
-                class="mb_20"
-                type="text"
-                placeholder="Enter Your Email Address"
-              />
-              <button class="btn">Subscribe</button>
+            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="category_page.html">Sản phẩm</a></li>
+              </ul>
             </div>
-          </div>
+            <!-- /.nav-collapse -->
+          </nav>
         </div>
       </div>
-      <div class="footer-bottom mt_60 ptb_10">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="copyright-part">
-                @ 2017 All Rights Reserved HealthCare
-              </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  BREADCRUM START  ===== -->
+    <div class="container">
+      <div id="breadcrum-schance">
+        <a href="./index.html">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+      </div>
+    </div>
+    <!-- =====  BREADCRUM END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row mt_30">
+        <!-- about  -->
+        <div class="col-sm-5 col-xs-12">
+          <img src="images/about-page-gaando.jpg" alt="#" />
+        </div>
+        <div class="col-sm-7 col-xs-12">
+          <div class="about-text">
+            <div>Dựa vào khảo sát 60 nền kinh tế của Mạng lưới khởi nghiệp
+              Toàn Cầu, Việt Nam nằm trong Top đầu 20 quốc gia về tinh
+              thần khởi nghiệp.</div>
+            <div>
+              Tuy nhiên, cũng theo nghiên cứu này, khả năng hiện thực
+              hóa ý tường của người Việt lại nằm trong 20 nền kinh tế
+              đứng cuối.
             </div>
-            <div class="col-sm-6">
-              <div class="payment-icon text-right">
-                <ul>
-                  <li><i class="fa fa-cc-paypal"></i></li>
-                  <li><i class="fa fa-cc-stripe"></i></li>
-                  <li><i class="fa fa-cc-visa"></i></li>
-                  <li><i class="fa fa-cc-discover"></i></li>
-                  <li><i class="fa fa-cc-mastercard"></i></li>
-                  <li><i class="fa fa-cc-amex"></i></li>
-                </ul>
-              </div>
+            <div>
+              Việc khởi nghiệp hay bắt đầu một hoạt động kinh doanh rất
+              đơn giản, chỉ cần xuất phát từ một ý tưởng. Nhưng để đưa
+              được ý tưởng ấy trở thành một mô hình kinh doanh cụ thể và
+              vận hành hiệu quả là một chặng đường dài.
+            </div>
+            <div>
+              Tỷ lệ tồn tại sau 3 đến 5 năm của các doanh nghiệp khởi
+              nghiệp chỉ là 5 đến 10%. Lý do xuất phát từ chính những
+              vấn đề vướng mắc như: sản phẩm, tài chính, nhân sự, thương
+              hiệu, văn hóa .....
+            </div>
+            <div>
+              Xuất phát là người đã từng khởi nghiệp và cũng chuẩn bị
+              khởi nghiệp, tôi hiểu những khó khăn, những cô đơn của
+              người khởi nghiệp.... và đó là lý do tôi tham gia xây dựng
+              Cộng đồng cùng những người khởi nghiệp.
+            </div>
+            <div>
+              Website thương mại S-CHANCE được ra đời với mục đích gắn
+              kết các sản phẩm/ dịch vụ mà thành viên cộng đồng đang
+              kinh doanh.
+            </div>
+            <div>
+              Ở S-CHANCE bạn vừa là nhà cung cấp, bạn vừa là khách hàng
+              và hơn nữa bạn vừa tham gia đóng góp QUỸ S-CHANCE cho
+              những hoạt động xã hội khác.
+            </div>
+            <div>Cùng nhau nhé các bạn!</div>
+          </div>
+        </div>
+        <!-- =====  end  ===== -->
+      </div>
+    </div>
+  </div>
+  <!-- Single Blog  -->
+  <!-- End Blog   -->
+  <!-- =====  CONTAINER END  ===== -->
+  <!-- =====  FOOTER START  ===== -->
+  <div class="footer">
+    <div class="footer-bottom mt_30 ptb_10">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="copyright-part">
+              © Bản quyền thuộc về S-CHANCE
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- =====  FOOTER END  ===== -->
-    <a id="scrollup">Scroll</a>
-  </body>
+  </div>
+  <!-- =====  FOOTER END  ===== -->
+  <a id="scrollup">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="icon_30C7">
+      <path d="M10.667 14.667h4v13.333h2.667v-13.333h4l-5.333-5.333-5.333 5.333zM5.333 4v2.667h21.333v-2.667h-21.333z">
+      </path>
+    </svg>
+  </a>
+</body>
+
 </html>

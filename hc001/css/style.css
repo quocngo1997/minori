@@ -70,8 +70,8 @@ html {
 }
 
 body {
-    line-height: 24px;
-    color: #808080;
+    line-height: 22px;
+    color: #505050;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -2216,7 +2216,47 @@ input#amount {
 /* ----------------------------------------------
 	3.2.4 Breadcrumb
 ----------------------------------------------- */
-
+#breadcrum-schance{
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+#breadcrum-schance a{
+    position: relative;
+    padding-right: 24px;
+}
+#breadcrum-schance a::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/schance/arrow.png);
+    top: 50%;
+    right: 2px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+}
+#breadcrum-schance a:last-child{
+    color: #ff424e
+}
+#breadcrum-schance a:last-child::after{
+    display: none
+}
+.about-text>div{
+    position: relative;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.about-text>div::before{
+    position: absolute;
+    content: '';
+    border: 3px solid #ff424e;
+    border-radius: 50%;
+    top: 8px;
+    left: 5px;
+}
 .breadcrumb {
     background-image: url("../images/breadcrumb.jpg");
     border-radius: 0;
@@ -2694,13 +2734,18 @@ blockquote {
 }
 
 .pagination-nav ul li a {
-    background-color: #f7f7f7;
+    background-color: #fff;
     display: block;
     font-size: 14px;
     height: 36px;
     line-height: 36px;
     text-align: center;
     width: 36px;
+    transition: .3s;
+}
+.pagination-nav ul li a:hover{
+    background: #ff424e;
+    color: #fff
 }
 
 .pagination-nav ul li.active a {
@@ -3377,7 +3422,6 @@ a.thumbnail.active {
         width: 100%;
     }
 }
-
 
 /*-----------------------------------*/
 @media (max-width: 550px) {
