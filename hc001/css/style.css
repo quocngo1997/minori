@@ -2508,6 +2508,105 @@ label.checkme {
     }
 }
 /* end checkout schance */
+
+/* company list */
+.item-company{
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+    display: flex;
+    align-items: start;
+}
+.item-company .image-conpany{
+    width: 15%;
+    overflow: hidden;
+}
+.item-company .image-conpany:hover img {
+    transform: scale(1.1);
+}
+.item-company .content-company{
+    width: 85%;
+    padding-left: 20px;
+}
+.item-company .content-company .title-company{
+    background: #fafafa;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 700;
+    font-size: 15px;
+}
+.item-company .content-company .line-info-company{
+    margin-top: 20px;
+    display: flex;
+    line-height: 25px;
+}
+.item-company .content-company .line-info-company .title-infor-company{
+    font-weight: 700;
+    padding-left: 20px;
+    position: relative;
+    width: 200px;
+}
+.item-company .content-company .line-info-company .title-infor-company:before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: #ff424e;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.item-company .content-company .line-info-company .content-info-company{
+    width: calc(100% - 200px);
+}
+.item-company .content-company .line-info-company .content-info-company a{
+    color: #337ab7;
+}
+@media (max-width: 991px){
+    .item-company{
+        display: block;
+        padding: 10px
+    }
+    .item-company .image-conpany{
+        max-width: 150px;
+        width: unset;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .item-company .content-company{
+        padding-left: 0;
+        width: 100%;
+    }
+    .item-company .content-company .title-company{
+        padding: 10px
+    }
+    .item-company .content-company .line-info-company{
+        margin-top: 15px;
+    }
+    .item-company .content-company .line-info-company .content-info-company{
+        text-align: justify;
+    }
+}
+@media (max-width: 600px){
+    .item-company .content-company .line-info-company .title-infor-company{
+        padding-right: 10px;
+        width: unset;
+    }
+    .item-company .content-company .line-info-company .content-info-company{
+        width: 100%;
+    }
+    .item-company .content-company .line-info-company{
+        display: block;
+        text-align: justify;
+    }
+    .item-company .content-company .line-info-company .title-infor-company:before{
+        top: 5px;
+    }
+}
+/* end company list */
 /* ----------------------------------------------
 	2.6 Header bottom
 ----------------------------------------------- */
