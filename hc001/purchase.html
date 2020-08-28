@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- =====  BASIC PAGE NEEDS  ===== -->
     <meta charset="utf-8" />
-    <title>Giới thiệu</title>
-    <!-- =====  MOBILE SPECIFICATION  ===== -->
+    <title>Theo dõi đơn hàng</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <meta name="viewport" content="width=device-width" />
     <!-- =====  CSS  ===== -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
 
   <body>
@@ -249,6 +247,14 @@
                       ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
                       chúng ta sẽ được nhận lại</span
                     >
+                    <span
+                      ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                      chúng ta sẽ được nhận lại</span
+                    >
+                    <span
+                      ><i class="fa fa-circle" aria-hidden="true"></i>Cho đi là
+                      chúng ta sẽ được nhận lại</span
+                    >
                   </div>
                 </div>
               </div>
@@ -256,70 +262,202 @@
           </div>
         </div>
       </header>
-      <!-- =====  HEADER END  ===== -->
-      <!-- =====  BREADCRUM START  ===== -->
-      <div class="container">
-        <div id="breadcrum-schance">
-          <a href="./index.html">Trang chủ</a>
-          <a href="#">Giới thiệu</a>
-        </div>
-      </div>
-      <!-- =====  BREADCRUM END  ===== -->
-      <!-- =====  CONTAINER START  ===== -->
-      <div class="container">
-        <div class="row mt_30">
-          <!-- about  -->
-          <div class="col-sm-5 col-xs-12">
-            <img src="images/about-page-gaando.jpg" alt="#" />
+    </div>
+    <div class="container">
+      <div class="purchase">
+        <div class="purchase-header">
+          <div class="purchase-header-item purchase-header-selected">
+            Tất cả
           </div>
-          <div class="col-sm-7 col-xs-12">
-            <div class="about-text">
-              <div>
-                Dựa vào khảo sát 60 nền kinh tế của Mạng lưới khởi nghiệp Toàn
-                Cầu, Việt Nam nằm trong Top đầu 20 quốc gia về tinh thần khởi
-                nghiệp.
+          <div class="purchase-header-item">Chờ xử lý(1)</div>
+          <div class="purchase-header-item">Đang giao(1)</div>
+          <div class="purchase-header-item">Hoàn thành</div>
+          <div class="purchase-header-item">Đã hủy</div>
+        </div>
+        <div class="purchase-content">
+          <div class="purchase-empty">
+            <img src="./images/schance/icon-empty.png" alt="" />
+            <p class="not-purchase">Chưa có đơn hàng</p>
+          </div>
+          <div class="purchase-item">
+            <div class="purchase-company">
+              <div class="logo-name-company">
+                <img src="./images/schance/logo-minori.jpg" alt="" />
+                <span class="name-company-purchase">Minori</span>
               </div>
-              <div>
-                Tuy nhiên, cũng theo nghiên cứu này, khả năng hiện thực hóa ý
-                tường của người Việt lại nằm trong 20 nền kinh tế đứng cuối.
+              <span class="status-purchase">Đang giao</span>
+            </div>
+            <div class="purchase-product">
+              <div class="purchase-product-item">
+                <div class="purchase-product-col">
+                  <a class="purchase-product-col-img">
+                    <img src="./images/schance/product.jpg" alt="" />
+                  </a>
+                  <div class="purchase-product-col-name">
+                    <a class="purchase-product-title" href=""
+                      >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                    >
+                    <div class="purchase-product-donate">
+                      <span class="purchase-donate-title">Ủng hộ:</span>
+                      <span class="purchase-donate-price">20,000đ</span>
+                    </div>
+                    <div class="purchae-product-amount">x 1</div>
+                  </div>
+                </div>
+                <div class="purchase-price-col">
+                  <span class="purchase-price-origin">30,000đ</span>
+                  <span class="purchase-price-discount">20,000đ</span>
+                </div>
               </div>
-              <div>
-                Việc khởi nghiệp hay bắt đầu một hoạt động kinh doanh rất đơn
-                giản, chỉ cần xuất phát từ một ý tưởng. Nhưng để đưa được ý
-                tưởng ấy trở thành một mô hình kinh doanh cụ thể và vận hành
-                hiệu quả là một chặng đường dài.
+              <div class="purchase-product-item">
+                <div class="purchase-product-col">
+                  <a class="purchase-product-col-img">
+                    <img src="./images/schance/product.jpg" alt="" />
+                  </a>
+                  <div class="purchase-product-col-name">
+                    <a class="purchase-product-title" href=""
+                      >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                    >
+                    <div class="purchase-product-donate">
+                      <span class="purchase-donate-title">Ủng hộ:</span>
+                      <span class="purchase-donate-price">20,000đ</span>
+                    </div>
+                    <div class="purchae-product-amount">x 1</div>
+                  </div>
+                </div>
+                <div class="purchase-price-col">
+                  <span class="purchase-price-origin">30,000đ</span>
+                  <span class="purchase-price-discount">20,000đ</span>
+                </div>
               </div>
-              <div>
-                Tỷ lệ tồn tại sau 3 đến 5 năm của các doanh nghiệp khởi nghiệp
-                chỉ là 5 đến 10%. Lý do xuất phát từ chính những vấn đề vướng
-                mắc như: sản phẩm, tài chính, nhân sự, thương hiệu, văn hóa
-                .....
+              <div class="purchase-product-total">
+                <div class="purchase-product-line">
+                  <span class="purchase-total-title">Tổng số tiền:</span>
+                  <span class="purchase-total-price">1,500,000đ</span>
+                </div>
+                <a href="" class="purchase-product-detail">Xem chi tiết đơn</a>
               </div>
-              <div>
-                Xuất phát là người đã từng khởi nghiệp và cũng chuẩn bị khởi
-                nghiệp, tôi hiểu những khó khăn, những cô đơn của người khởi
-                nghiệp.... và đó là lý do tôi tham gia xây dựng Cộng đồng cùng
-                những người khởi nghiệp.
-              </div>
-              <div>
-                Website thương mại S-CHANCE được ra đời với mục đích gắn kết các
-                sản phẩm/ dịch vụ mà thành viên cộng đồng đang kinh doanh.
-              </div>
-              <div>
-                Ở S-CHANCE bạn vừa là nhà cung cấp, bạn vừa là khách hàng và hơn
-                nữa bạn vừa tham gia đóng góp QUỸ S-CHANCE cho những hoạt động
-                xã hội khác.
-              </div>
-              <div>Cùng nhau nhé các bạn!</div>
             </div>
           </div>
-          <!-- =====  end  ===== -->
+          <div class="purchase-item">
+            <div class="purchase-company">
+              <div class="logo-name-company">
+                <img
+                  src="https://schance.uploading.asia/content/uploads/media/company/1598323357247/bk.jpg"
+                  alt=""
+                />
+                <span class="name-company-purchase">ZONE7</span>
+              </div>
+              <span class="status-purchase">Đã hủy</span>
+            </div>
+            <div class="purchase-product">
+              <div class="purchase-product-item">
+                <div class="purchase-product-col">
+                  <a class="purchase-product-col-img">
+                    <img src="./images/schance/product.jpg" alt="" />
+                  </a>
+                  <div class="purchase-product-col-name">
+                    <a class="purchase-product-title" href=""
+                      >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                    >
+                    <div class="purchase-product-donate">
+                      <span class="purchase-donate-title">Ủng hộ:</span>
+                      <span class="purchase-donate-price">20,000đ</span>
+                    </div>
+                    <div class="purchae-product-amount">x 1</div>
+                  </div>
+                </div>
+                <div class="purchase-price-col">
+                  <span class="purchase-price-origin">30,000đ</span>
+                  <span class="purchase-price-discount">20,000đ</span>
+                </div>
+              </div>
+              <div class="purchase-product-total">
+                <div class="purchase-product-line">
+                  <span class="purchase-total-title">Tổng số tiền:</span>
+                  <span class="purchase-total-price">1,500,000đ</span>
+                </div>
+                <a href="" class="purchase-product-detail">Xem chi tiết đơn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      Click vào nút xem chi tiết đơn hoặc tên sản phẩm sẽ qua component chi tiết
+      đơn hàng như dưới đây
+      <div class="detail-purchase">
+        <div class="code-status-detail">
+          <div class="code-detail-purchase">
+            <span class="code-detail-title">Mã đơn hàng:</span>
+            <span class="code-detail-product">ORD959281</span>
+          </div>
+          <span class="status-detail-purchase">Đã hủy</span>
+        </div>
+        <div class="address-purchase">
+          <div class="address-header">Địa chỉ nhận hàng</div>
+          <div class="line-address-purchase clearfix">
+            <span class="title-info">Họ tên:</span>
+            <span class="content-info">Ngô Văn Quốc</span>
+          </div>
+          <div class="line-address-purchase clearfix">
+            <span class="title-info">Số điện thoại:</span>
+            <span class="content-info">0974028392</span>
+          </div>
+          <div class="line-address-purchase clearfix">
+            <span class="title-info">Địa chỉ:</span>
+            <span class="content-info">Cầu Đỏ - Túy Loan, Đà Nẵng</span>
+          </div>
+        </div>
+        <div class="purchase-item">
+          <div class="purchase-company">
+            <div class="logo-name-company">
+              <img
+                src="https://schance.uploading.asia/content/uploads/media/company/1598323357247/bk.jpg"
+                alt=""
+              />
+              <span class="name-company-purchase">ZONE7</span>
+            </div>
+          </div>
+          <div class="purchase-product">
+            <div class="purchase-product-item">
+              <div class="purchase-product-col">
+                <a class="purchase-product-col-img">
+                  <img src="./images/schance/product.jpg" alt="" />
+                </a>
+                <div class="purchase-product-col-name">
+                  <a class="purchase-product-title" href=""
+                    >Tranh Văn Phòng Đến Sớm 5 Phút Là Đúng Giờ</a
+                  >
+                  <div class="purchase-product-donate">
+                    <span class="purchase-donate-title">Ủng hộ:</span>
+                    <span class="purchase-donate-price">20,000đ</span>
+                  </div>
+                  <div class="purchae-product-amount">x 1</div>
+                </div>
+              </div>
+              <div class="purchase-price-col">
+                <span class="purchase-price-origin">30,000đ</span>
+                <span class="purchase-price-discount">20,000đ</span>
+              </div>
+            </div>
+            <div class="purchase-product-total">
+              <div class="purchase-product-line">
+                <span class="purchase-total-title">Tổng số tiền:</span>
+                <span class="purchase-total-price">1,500,000đ</span>
+              </div>
+              <div class="purchase-payment-method">
+                <span class="purchase-payment-title"
+                  >Phương thức thanh toán:</span
+                >
+                <span class="purchase-payment-content"
+                  >Thanh toán khi nhận hàng</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Single Blog  -->
-    <!-- End Blog   -->
-    <!-- =====  CONTAINER END  ===== -->
     <!-- =====  FOOTER START  ===== -->
     <div class="footer">
       <div class="footer-bottom mt_30 ptb_10">
